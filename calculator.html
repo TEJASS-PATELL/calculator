@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Comic+Relief:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+
+<body>
+
+    <h1>CALCULATOR</h1>
+
+    <div class="div">
+        <input id="h" readonly />
+
+        <div class="botton">
+            <button onclick="press('+')">+</button>
+            <button onclick="press('-')">-</button>
+            <button onclick="press('*')">*</button>
+            <button onclick="press('/')">/</button>
+
+            <button onclick="calculate()" class="a5">=</button>
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('0')">0</button>
+
+            <button onclick="clearDisplay()" class="a18">C</button>
+            <button onclick="press('.')">.</button>
+
+            <!-- ✅ New Buttons -->
+            <button onclick="press('%')">%</button>
+            <button onclick="press('(')">(</button>
+            <button onclick="press(')')">)</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
